@@ -1,4 +1,4 @@
-# APEX — Street Run
+# APEX — Neon Rush
 
 Juego sencillo de carreras en español, hecho con HTML, CSS y JavaScript, sin dependencias de ejecución.
 
@@ -23,3 +23,7 @@ El acceso utiliza un nombre de piloto, sin contraseña. Es un perfil de demostra
 - `dist/game.js`: pista Canvas, movimiento, colisiones, pausa y récords.
 
 La partida se pausa automáticamente al cambiar de pestaña o perder el foco.
+
+## Diseño renovado
+
+Autopista nocturna con perspectiva, deportivo cian, luces neón y marcadores sobre la pista. El juego llena toda la ventana y se adapta al tamaño de pantalla. El botón ⛶ activa pantalla completa cuando el navegador lo permite; F11 es una alternativa en escritorio. Se conservan las claves de almacenamiento del login y los récords anteriores.
