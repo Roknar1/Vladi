@@ -1,71 +1,70 @@
-# IRON FRONT — Operación Eclipse
+# Nimbo Quest
 
-Juego original de acción lateral 2D para un jugador. Sustituye a RIFT ARENA en la versión actual de este repositorio. Inspirado en el género arcade run-and-gun: correr, saltar, apuntar, disparar y derrotar jefes. No es una reproducción de Contra y no incluye sus niveles, gráficos, música ni grabaciones de sonido.
+Aventura original de plataformas 2D con estética retro: 32 niveles en ocho mundos, login sencillo, monedas, bloques sorpresa, tuberías de bonificación y guardianes. El protagonista es Nilo, un pequeño mensajero que devuelve las ocho luces a las islas del cielo.
 
-## Iniciar
+El juego anterior, **IRON FRONT**, permanece disponible en `dist/iron-front/index.html` y mediante el enlace del menú de Nimbo Quest.
 
-Abre `dist/index.html` en un navegador moderno o sirve la carpeta `dist` con un servidor estático. No necesita compilación ni instalación de dependencias. Las fuentes externas son opcionales, con alternativas locales.
+## Abrir y jugar
 
-Introduce un alias de 2–18 caracteres, entra al cuartel y pulsa **Iniciar misión**. Activa **AUDIO ON** para escuchar la música y los efectos. El navegador requiere esa interacción para habilitar el audio.
+Abre `dist/index.html` en un navegador moderno o sirve `dist/` con cualquier servidor estático. No necesita compilación ni instalación de dependencias. Las fuentes web son opcionales y tienen alternativas locales.
 
-## Campaña: ocho sectores originales
+Introduce un alias de 2–18 caracteres y pulsa **¡Vamos a jugar!**. Los mundos y niveles se desbloquean al completar el anterior. Puedes repetir los ya desbloqueados. Activa **SONIDO ON** para escuchar la música y los efectos originales.
 
-| Sector | Escenario | Jefe | Tema musical |
-|---|---|---|---|
-| 01 | Selva de cobre | Centinela M-09 | Código verde |
-| 02 | Presa del trueno | Hidra de acero | Presión crítica |
-| 03 | Fundición roja | Forja Coloso | Acero en llamas |
-| 04 | Tren fantasma | Locomotora Cerbero | Sin frenos |
-| 05 | Bastión polar | Arácnido Glacial | Cero absoluto |
-| 06 | Dunas de ceniza | Escorpión Titán | Horizonte abrasado |
-| 07 | Órbita quebrada | Prisma Orbital | Gravedad cero |
-| 08 | Corazón Eclipse | Eclipse / Entidad Cero | Última frecuencia |
+## Mundos
 
-Cada sector tiene paleta, decoración, longitud y jefe propios. La geometría se construye con módulos de plataformas y huecos. Los jefes usan patrones distintos: ráfagas dirigidas, abanicos, proyectiles con gravedad, bombardeos, refuerzos, barridos telegrafiados y anillos de proyectiles.
+Cada mundo contiene cuatro niveles; el cuarto tiene un guardián. Los niveles se generan de manera determinista con módulos y variaciones propias en longitudes, huecos, bloques y enemigos; no son mapas copiados de otro videojuego.
 
-Al completar un sector se desbloquea el siguiente y se recupera una vida (máximo 7). Los sectores desbloqueados se pueden repetir desde el cuartel. Hay un desenlace al terminar los ocho.
+| Mundo | Guardián | Tema musical original |
+|---|---|---|
+| Praderas de menta | Musgón, guardián del valle | Un camino de tréboles |
+| Grutas de cristal | Ónix, el eco de piedra | Ecos de cuarzo |
+| Dunas de miel | Dorado, centinela de arena | Pasos en la arena |
+| Archipiélago celeste | Cúmulo, pastor de tormentas | Correo entre nubes |
+| Jardines de escarcha | Boreal, el gigante dormido | Copos de luz |
+| Bosque de luciérnagas | Raíz, el corazón del bosque | Linternas en las hojas |
+| Torres del crepúsculo | Véspero, vigía lunar | Vals de las estrellas |
+| Volcán de las auroras | Umbra, el coleccionista de luz | El último amanecer |
 
 ## Controles
 
-| Acción | Teclado |
+| Acción | Tecla |
 |---|---|
 | Moverse | A / D o ← / → |
-| Apuntar arriba o diagonal | W / ↑, combinado con movimiento |
-| Agacharse; apuntar abajo en el aire | S / ↓ |
-| Disparar automáticamente mientras mantienes la tecla | J / Z |
-| Saltar | K / X / espacio |
-| Lanzar granada | L / C |
+| Saltar | Espacio / Z / W / ↑ |
+| Correr | Shift / X |
+| Entrar en una tubería marcada ↓ | S / ↓, estando encima |
+| Lanzar chispa con la mejora flor | J |
 | Pausar o continuar | P / Escape |
 
-Incluye controles táctiles y botón de pantalla completa. En móviles se recomienda orientación horizontal. La partida se pausa al perder el foco o esconder la pestaña.
+Mantén salto para llegar más alto; suelta para un salto corto. Incluye controles táctiles y botón de pantalla completa. En móvil se recomienda orientación horizontal durante el juego.
 
-## Reglas
+## Mecánicas
 
-- 5 vidas al iniciar una misión desde el cuartel y 3 puntos de resistencia por vida.
-- Breve invulnerabilidad después de un impacto y al reaparecer.
-- Balizas de retorno dentro de cada sector; los huecos consumen una vida.
-- Tres granadas por vida, con daño de área.
-- Fusil de munición ilimitada, mejora **S** de disparo triple y mejora **B** de bláster (180 disparos por mejora).
-- Los botiquines **+** recuperan resistencia.
-- Al morir durante un jefe, su resistencia se restaura para el siguiente intento.
-- Al agotar las vidas puedes reiniciar el sector. Las misiones desbloqueadas se conservan.
+- Cinco vidas al comenzar desde el mapa. Cada 50 monedas otorgan una vida adicional.
+- Golpea los bloques ✦ desde abajo para conseguir monedas o mejoras.
+- **Fruta:** Nilo crece, puede romper ladrillos y resiste un impacto antes de volver al tamaño normal.
+- **Flor:** añade chispas que rebotan en el suelo; se lanzan con J.
+- **Cristal:** protección temporal durante ocho segundos.
+- Pisa escarabajos y aves al caer; esquiva los bichos con pinchos.
+- Usa las tuberías con flecha para visitar un jardín de monedas. La tubería de salida o el extremo derecho devuelve al nivel.
+- Las banderas guardan un punto de retorno dentro de la partida. No sobreviven a cerrar la página.
+- Cada nivel tiene un tiempo límite y un faro de llegada. En los niveles de guardián hay que vencerlo antes de poder terminar.
+- Los guardianes reciben daño con un salto encima o una chispa cuando su escudo está desactivado. Al reaparecer durante un jefe, su resistencia se restaura.
+- Completar un mundo concede una vida; terminar el nivel 8–4 muestra el desenlace.
 
-## Música y sonidos
+## Perfil y música
 
-Ocho bucles instrumentales originales sintetizados con Web Audio: melodías y tempos diferentes, bajo y percusión. No son pistas extraídas de otro videojuego ni grabaciones de estudio.
+Login local sin contraseña; no es autenticación de servidor. `localStorage` guarda el alias, récord, niveles desbloqueados y campaña completada. No sincroniza entre dispositivos. Si el almacenamiento está bloqueado, el juego funciona sin persistencia. Recupera el alias del juego anterior si existe.
 
-Efectos propios para pasos, salto, aterrizaje, fusil, bláster, impactos, explosiones, muerte, mejoras, balizas, granadas, alerta de jefe, inicio y final de misión. Se pueden silenciar desde la cabecera. La música se detiene al pausar.
+Ocho melodías originales sintetizadas con Web Audio, con bajo y percusión. Efectos propios de salto, moneda, golpe de bloque, rotura, mejora, pisotón, daño, muerte, tubería, victoria, vida adicional, chispa y punto de retorno. El audio requiere una pulsación del usuario y se detiene al pausar. No contiene canciones ni grabaciones extraídas de otros juegos.
 
-## Perfil y almacenamiento
+## Archivos
 
-Login local sin contraseña, no autenticación de servidor. Guarda alias, récord, sectores desbloqueados y campaña completada en `localStorage`. Recupera el alias del proyecto anterior cuando aún no existe uno para Iron Front. Los puntos de retorno son temporales y no sobreviven al cierre de la página. No hay sincronización entre dispositivos; con almacenamiento bloqueado se puede jugar sin persistencia.
+- `dist/index.html`: acceso, mapa, HUD, ayuda y controles.
+- `dist/style.css`: diseño adaptable.
+- `dist/game.js`: escenarios, física, colisiones, enemigos, guardianes, mejoras, gráficos Canvas y sonido.
+- `dist/iron-front/`: versión anterior de IRON FRONT, conservada para seguir jugando.
 
-## Archivos y comprobaciones
+## Verificación
 
-- `dist/index.html`: acceso, cuartel, selector de misión, HUD y controles.
-- `dist/style.css`: interfaz adaptable.
-- `dist/game.js`: física a paso fijo, escenarios, enemigos, jefes, audio y gráficos Canvas originales.
-
-Verificado con análisis de sintaxis y simulaciones del motor: plataformas alcanzables y huecos superables en los ocho sectores; ataques y derrota de cada jefe; desbloqueos y final; colisiones de disparos, armas, granadas, daño, invulnerabilidad, muerte y reaparición; pausa; programación y limpieza del audio.
-
-La revisión visual en navegador de esta versión no se completó por un bloqueo de la infraestructura de vista previa. Las pruebas automatizadas no sustituyen una partida completa de verificación visual y balance.
+Comprobación de sintaxis y simulaciones de los 32 niveles: huecos superables, ataques y derrota de los ocho guardianes, desbloqueos y final, bloques golpeados desde abajo, mejoras, daño y reaparición, tuberías de ida y vuelta, vidas por monedas, salto, pausa y síntesis musical. Revisión visual en navegador del acceso, mapa, primer nivel y pausa. Esto no equivale a una partida manual completa de balance de los 32 niveles.
