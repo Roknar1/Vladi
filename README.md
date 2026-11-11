@@ -1,29 +1,33 @@
-# APEX — Neon Rush
+# RIFT ARENA
 
-Juego sencillo de carreras en español, hecho con HTML, CSS y JavaScript, sin dependencias de ejecución.
+Juego de peleas 2D para navegador, en español. Sustituye el anterior juego de carreras APEX.
 
 ## Jugar
 
-Abre `dist/index.html` en un navegador moderno. También puedes servir `dist/` con cualquier servidor estático. Las fuentes de Google son opcionales: hay fuentes de respaldo para jugar sin conexión.
+Abre `dist/index.html` o sirve la carpeta `dist` con un servidor estático. No necesita instalación ni compilación. Las fuentes web son opcionales y tienen alternativas locales.
 
-1. Introduce un nombre de piloto (2–18 caracteres).
-2. Pulsa **Comenzar carrera**.
-3. Cambia de carril con **← / →** o **A / D**. En celular usa los botones.
-4. Pulsa **P**, espacio o el botón de pausa para detener/continuar.
-5. Evita el tráfico y supera tu récord. La velocidad aumenta progresivamente.
+Introduce un alias de 2–18 caracteres y pulsa **Iniciar combate**. Gana dos rounds contra Vex. Hay tres niveles de dificultad, rounds de 60 segundos, bloqueo, salto y energía para ataques especiales. Cada victoria se guarda por perfil en el navegador.
 
-## Login simple
+| Tecla | Acción |
+|---|---|
+| A / D o ← / → | Moverse |
+| W o ↑ | Saltar |
+| J | Golpe rápido |
+| K | Patada de mayor alcance |
+| S o ↓ | Mantener bloqueo |
+| L | Especial con energía completa |
+| P / Escape | Pausar o continuar |
 
-El acceso utiliza un nombre de piloto, sin contraseña. Es un perfil de demostración local, no autenticación de servidor. El navegador guarda el nombre y los récords por piloto con `localStorage`. No hay cuentas remotas ni sincronización entre dispositivos. Si el almacenamiento está bloqueado, se puede jugar, pero el progreso no persiste.
+Incluye botones táctiles, sonido opcional, pantalla completa, pausa al perder el foco y renderizado Canvas adaptable con densidad de hasta 2×. En teléfonos se recomienda orientación horizontal.
+
+## Login
+
+Perfil local sin contraseña; no es autenticación de servidor. No solicita correo ni contraseñas. El alias y las victorias se guardan en `localStorage`; si no está disponible, la partida funciona sin persistencia. Se recupera el alias del juego anterior si existe.
 
 ## Archivos
 
-- `dist/index.html`: interfaz y formulario de acceso.
-- `dist/style.css`: diseño adaptable a computadoras y celulares.
-- `dist/game.js`: pista Canvas, movimiento, colisiones, pausa y récords.
+- `dist/index.html`: acceso, menú, HUD y controles.
+- `dist/style.css`: interfaz responsive.
+- `dist/game.js`: motor de combate, rival CPU, gráficos vectoriales, efectos y audio sintetizado.
 
-La partida se pausa automáticamente al cambiar de pestaña o perder el foco.
-
-## Diseño renovado
-
-Autopista nocturna con perspectiva, deportivo cian, luces neón y marcadores sobre la pista. El juego llena toda la ventana y se adapta al tamaño de pantalla. El botón ⛶ activa pantalla completa cuando el navegador lo permite; F11 es una alternativa en escritorio. Se conservan las claves de almacenamiento del login y los récords anteriores.
+Personajes y escenario originales dibujados mediante Canvas; sin librerías de ejecución ni recursos gráficos externos. El historial Git conserva las versiones anteriores.
