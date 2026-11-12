@@ -12,7 +12,7 @@ Introduce un alias de 2–18 caracteres y pulsa **¡Vamos a jugar!**. Los mundos
 
 ## Mundos
 
-Cada mundo contiene cuatro niveles; el cuarto tiene un guardián. Los niveles se generan de manera determinista con módulos y variaciones propias en longitudes, huecos, bloques y enemigos; no son mapas copiados de otro videojuego.
+Cada mundo contiene cuatro niveles; el cuarto tiene un guardián. Los 32 niveles tienen itinerarios diseñados individualmente, con distintas alturas, huecos, ubicaciones de enemigos y mecanismos. Dentro de un mismo mundo se alternan escenarios y desafíos: cuevas, puentes, lagos submarinos, ascensos, pistas de hielo y fortalezas. Son mapas originales.
 
 | Mundo | Guardián | Tema musical original |
 |---|---|---|
@@ -36,10 +36,12 @@ Cada mundo contiene cuatro niveles; el cuarto tiene un guardián. Los niveles se
 | Lanzar chispa con la mejora flor | J |
 | Pausar o continuar | P / Escape |
 
-Mantén salto para llegar más alto; suelta para un salto corto. Incluye controles táctiles y botón de pantalla completa. En móvil se recomienda orientación horizontal durante el juego.
+Mantén salto para llegar más alto; suelta para un salto corto. Bajo el agua, mantén salto para nadar hacia arriba; al soltarlo desciendes lentamente. Incluye controles táctiles y botón de pantalla completa. En móvil se recomienda orientación horizontal durante el juego.
 
 ## Mecánicas
 
+- Plataformas móviles que transportan al personaje, trampolines, cintas transportadoras, corrientes de agua, viento y géiseres intermitentes.
+- Los puntos de control reaparecen a la altura correcta del terreno de cada nivel.
 - Cinco vidas al comenzar desde el mapa. Cada 50 monedas otorgan una vida adicional.
 - Golpea los bloques ✦ desde abajo para conseguir monedas o mejoras.
 - **Fruta:** Nilo crece, puede romper ladrillos y resiste un impacto antes de volver al tamaño normal.
@@ -67,4 +69,4 @@ Ocho melodías originales sintetizadas con Web Audio, con bajo y percusión. Efe
 
 ## Verificación
 
-Comprobación de sintaxis y simulaciones de los 32 niveles: huecos superables, ataques y derrota de los ocho guardianes, desbloqueos y final, bloques golpeados desde abajo, mejoras, daño y reaparición, tuberías de ida y vuelta, vidas por monedas, salto, pausa y síntesis musical. Revisión visual en navegador del acceso, mapa, primer nivel y pausa. Esto no equivale a una partida manual completa de balance de los 32 niveles.
+Comprobación de sintaxis y simulaciones de los 32 itinerarios: mapas distintos, objetos sobre terreno válido, alturas y huecos dentro del alcance de salto, reaparición en puntos de control, dibujo de cada escenario, derrota de guardianes, desbloqueos y final. Pruebas de regreso desde tuberías, natación, trampolines y cintas transportadoras. Las comprobaciones geométricas no sustituyen una partida manual completa de balance de los 32 niveles.
